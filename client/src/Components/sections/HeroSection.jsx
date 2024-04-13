@@ -25,10 +25,10 @@ const HeroSection = ({ page }) => {
                   Raise Up is a platform that allows you to get crowd funding for your business or project. You can also invest in other projects and earn a share of the capital.
                 </p>
                 <div className='flex justify-center lg:justify-start gap-6 flex-wrap'>
-                  <button className='bg-gradient-to-br from-orange-400 shadow-2xl shadow-red-400 border-2 border-green-500 rounded-xl text-white font-semibold text-base tracking-wide to-red-400 py-2 px-4 hover:bg-gradient-to-tl hover:scale-105 transition-all ease-in-out duration-200 flex justify-center items-center'>
+                  <button className='bg-gradient-to-br from-orange-400 shadow-2xl shadow-red-400  rounded-xl text-white font-semibold text-base tracking-wide to-red-400 py-2 px-4 hover:bg-gradient-to-tl hover:scale-105 transition-all ease-in-out duration-200 flex justify-center items-center'>
                     Know More <FontAwesomeIcon icon={faArrowRight} className='ml-2 pt-1' />
                   </button>
-                  <Link to={page} className='bg-gradient-to-tl from-orange-400 shadow-2xl shadow-red-600 border-2 border-green-400 rounded-xl text-white font-semibold text-base tracking-wide to-emerald-600 py-2 px-4 hover:bg-gradient-to-br hover:scale-105 transition-all ease-in-out duration-200'>Get Started</Link>
+                  <Link to={page} className='bg-gradient-to-tl from-orange-400 shadow-2xl shadow-red-600  rounded-xl text-white font-semibold text-base tracking-wide to-emerald-600 py-2 px-4 hover:bg-gradient-to-br hover:scale-105 transition-all ease-in-out duration-200'>Get Started</Link>
                 </div>
               </div>
             </div>
