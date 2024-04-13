@@ -1,4 +1,4 @@
-const { Startup } = require("../model/Startup");
+const { Startup } = require("../models/Startup");
 
 //Check if user exists by useruid
 const isActiveStartup = async (req, res) => {

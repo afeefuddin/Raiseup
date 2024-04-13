@@ -28,7 +28,7 @@ const HeroSection = ({ page }) => {
                   <button className='bg-gradient-to-br from-orange-400 shadow-2xl shadow-red-400  rounded-xl text-white font-semibold text-base tracking-wide to-red-400 py-2 px-4 hover:bg-gradient-to-tl hover:scale-105 transition-all ease-in-out duration-200 flex justify-center items-center'>
                     Know More <FontAwesomeIcon icon={faArrowRight} className='ml-2 pt-1' />
                   </button>
-                  <Link to={page} className='bg-gradient-to-tl from-orange-400 shadow-2xl shadow-red-600  rounded-xl text-white font-semibold text-base tracking-wide to-emerald-600 py-2 px-4 hover:bg-gradient-to-br hover:scale-105 transition-all ease-in-out duration-200'>Get Started</Link>
+                  <Link to={page} className='bg-gradient-to-tl from-orange-400 shadow-2xl shadow-red-600  rounded-xl text-white font-semibold text-base tracking-wide to-red-400 py-2 px-4 hover:bg-gradient-to-br hover:scale-105 transition-all ease-in-out duration-200'>Get Started</Link>
                 </div>
               </div>
             </div>
