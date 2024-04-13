@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { useAuth } from "../Context/AuthContext";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
+import Loading from '../Components/Loading/Loading';
 // import Loading from '../Components/Loading/Loading';
 
 const Role = () => {
@@ -85,7 +86,7 @@ const Role = () => {
   }
 
   if (showLoading) {
-    return <div>loading</div>;
+    return <Loading />;
   }
 
   return (
