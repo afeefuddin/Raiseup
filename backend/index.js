@@ -1,19 +1,21 @@
-const express = require('express')
-const cors = require('cors')
-const userRouter = require('./routes/user') 
+const express = require("express");
+const cors = require("cors");
+const userRouter = require("./routes/user");
 
 const app = express();
 
-app.use(cors({
-    origin : "http://localhost:3000",
+app.use(
+  cors({
+    origin: "http://localhost:3000",
     methods: "GET,HEAD,PUT,PATCH,POST,OPTIONS,DELETE",
-    credentials: true
-}))
+    credentials: true,
+  })
+);
 
+// Define Routes
+app.use("/api/users", userRouter);
+app.use("/api/startups", startupRouter);
 
-
-app.use(userRouter)
-
-app.listen(5000,()=>{
-    console.log("Server Started at port 5000")
-})
+app.listen(5000, () => {
+  console.log("Server Started at port 5000");
+});
