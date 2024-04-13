@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 const Navbar = ({ activeLink, handleActiveLink, handleMenuToggle, isMenuOpen, page }) => {
   return (
     <header>
-      <nav className="fixed z-50 mb-5 w-full px-4 lg:px-6 py-2.5 bg-green-500/10 backdrop-blur-xl">
+      <nav className="fixed z-50 mb-5 w-full px-4 lg:px-6 py-2.5 bg-orange-500/10 backdrop-blur-xl">
         <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
           <button onClick={() => {window.location.reload()}} className="flex items-center">
             <img
@@ -17,7 +17,7 @@ const Navbar = ({ activeLink, handleActiveLink, handleMenuToggle, isMenuOpen, pa
           <div className="flex items-center lg:order-2">
             <Link
               to={page}
-              className="relative rounded-lg text-black text-sm flex items-center gap-1.5 py-2 px-5 mx-3 bg-gradient-to-bl from-green-400 to-emerald-400 font-medium tracking-wide hover:bg-gradient-to-tr duration-200 transition-all ease-in-out"
+              className="relative rounded-lg text-black text-sm flex items-center gap-1.5 py-2 px-5 mx-3 bg-gradient-to-br from-orange-400 shadow-2xl shadow-red-600 to-red-400 font-medium tracking-wide hover:bg-gradient-to-tr duration-200 transition-all ease-in-out"
               disabled={true}
             >
               Get started
@@ -59,7 +59,7 @@ const Navbar = ({ activeLink, handleActiveLink, handleMenuToggle, isMenuOpen, pa
           </div>
           {isMenuOpen && (
             <div
-              className="justify-between lg:hidden items-center w-full mt-2 pb-4 px-2.5 rounded-lg border-b-2 bg-gradient-to-b from-emerald-300 to-green-500"
+              className="justify-between lg:hidden items-center w-full mt-2 pb-4 px-2.5 rounded-lg border-b-2 bg-gradient-to-b from-amber-300 to-orange-400"
               id="mobile-menu-2"
             >
               <ul className="flex flex-col mt-4 font-medium space-y-3">
