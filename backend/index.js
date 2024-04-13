@@ -1,7 +1,7 @@
 const express = require("express");
 const cors = require("cors");
-const {router} = require("./routes/user");
-const startupRouter = require('./routes/startup');
+const { router } = require("./routes/user");
+const startupRouter = require("./routes/startup");
 const connectDB = require("./config/db");
 const app = express();
 
@@ -16,10 +16,11 @@ app.use(
 // Define Routes
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
-connectDB()
+connectDB();
 
 app.use("/api/users", router);
 // app.use("/api/startups",startupRouter );
+// app.use("/api/payments", paymentRouter);
 
 app.listen(5000, () => {
   console.log("Server Started at port 5000");
