@@ -1,5 +1,5 @@
-const { Startup } = require("../model/Startup");
-const { User } = require("../model/User");
+const { Startup } = require("../models/Startup");
+const { User } = require("../models/User");
 
 async function createStartup(req, res) {
   console.log(req.body);

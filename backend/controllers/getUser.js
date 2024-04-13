@@ -1,4 +1,4 @@
-const { User } = require("../model/User");
+const { User } = require("../models/User");
 
 //Check if user exists by useruid
 async function getUser(req, res) {
