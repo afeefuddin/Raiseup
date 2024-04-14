@@ -41,7 +41,7 @@ const Dashboard = () => {
     console.log(nodeEnv);
     const baseUrl =
       nodeEnv === "production"
-        ? "https://crowdup-api.vercel.app"
+        ? "https://raiseup-api.vercel.app"
         : "http://localhost:5000";
     const getUser = async () => {
       try {
@@ -77,7 +77,7 @@ const Dashboard = () => {
     const nodeEnv = process.env.REACT_APP_NODE_ENV;
     const baseUrl =
       nodeEnv === "production"
-        ? "https://crowdup-api.vercel.app"
+        ? "https://raiseup-api.vercel.app"
         : "http://localhost:5000";
     const isActiveStartup = async () => {
       try {
@@ -122,13 +122,10 @@ const Dashboard = () => {
             <Route path="/fundings" element={<Fundings />} />
           )
         }
-          {
+        {
           // If the user is a startup and the startup is active
-          role === "investor"  && (
-            <Route path="/funded" element={<Fundings />} />
-          )
+          role === "investor" && <Route path="/funded" element={<Fundings />} />
         }
-
 
         {role === "investor" && (
           <>

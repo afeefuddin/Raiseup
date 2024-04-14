@@ -15,7 +15,7 @@ const storage = new CloudinaryStorage({
   params: (req, file) => {
     return {
       folder:
-        "crowdup/" + (!file.mimetype.startsWith("image/") ? "pdfs" : "images"), // folder in Cloudinary where the files will be stored
+        "raiseup/" + (!file.mimetype.startsWith("image/") ? "pdfs" : "images"), // folder in Cloudinary where the files will be stored
       allowed_formats: !file.mimetype.startsWith("image/")
         ? ["pdf"]
         : ["jpg", "jpeg", "png", "gif"],

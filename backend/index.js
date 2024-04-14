@@ -1,27 +1,33 @@
 const express = require("express");
-const cors = require("cors");
-const { router } = require("./routes/user");
-const startupRouter = require("./routes/startup");
 const connectDB = require("./config/db");
+const cors = require("cors"); // to allow cross-origin requests
+const userRouter = require("./routes/user");
+const startupRouter = require("./routes/startup");
+const paymentRouter = require("./routes/payment");
+
 const app = express();
+const corsOrigin =
+  process.env.REACT_APP_NODE_ENV === "production"
+    ? "https://raise-up.vercel.app"
+    : "http://localhost:3000";
 
 app.use(
   cors({
-    origin: "http://localhost:3000",
+    origin: corsOrigin,
     methods: "GET,HEAD,PUT,PATCH,POST,OPTIONS,DELETE",
     credentials: true,
   })
 );
 
-// Define Routes
+// Connect to database
+connectDB();
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
-connectDB();
 
-app.use("/api/users", router);
-// app.use("/api/startups",startupRouter );
-// app.use("/api/payments", paymentRouter);
+// Define Routes
+app.use("/api/users", userRouter);
+app.use("/api/startups", startupRouter);
+app.use("/api/payments", paymentRouter);
 
-app.listen(5000, () => {
-  console.log("Server Started at port 5000");
-});
+const PORT = process.env.PORT || 5000;
+app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
