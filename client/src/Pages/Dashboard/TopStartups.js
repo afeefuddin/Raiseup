@@ -5,7 +5,7 @@ const TopStartups = () => {
   return (
     <div className="p-4 pt-20 min-h-screen lg:ml-64">
       <div className="w-full flex flex-col">
-        <h1 className="text-3xl mb-1 text-center font-bold leading-none md:text-4xl lg:text-5xl pb-2 bg-gradient-to-bl from-green-700 via-emerald-500 to-lime-600 bg-clip-text text-transparent">
+        <h1 className="text-3xl mb-1 text-center font-bold leading-none md:text-4xl lg:text-5xl pb-2 bg-gradient-to-bl from-orange-400  to-red-400 bg-clip-text text-transparent">
           {" "}
           Top 10 Featured Start Ups{" "}
         </h1>
@@ -17,16 +17,16 @@ const TopStartups = () => {
 
         <TopComponent
           fundingReceived={1000000000}
-          domain="Healthcare"
-          title="Urekathon"
+          domain="AI"
+          title="OpenAI"
           description="
-          Urekathon is avsdvsdv Urekathon is avsdvsdvUrekathon is avsdvsdvUrekathon is avsdvsdvUrekathon is
-          avsdvsdvUrekathon is avsdvsdvUrekathon is avsdvsdv
+          Hack ur way is avsdvsdv Hack ur way is avsdvsdvHack ur way is avsdvsdvHack ur way is avsdvsdvHack ur way is
+          avsdvsdvHack ur way is avsdvsdvHack ur way is avsdvsdv
           "
-          userPhoto="/ogog.webp"
-          userName="John Doe"
+          userPhoto="/images/ogog.png"
+          userName="Sam Altman"
           fundingReq={1000000}
-          ranking={10}
+          ranking={1}
           action="view"
           page="/startup"
         />

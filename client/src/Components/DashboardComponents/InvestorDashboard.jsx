@@ -33,11 +33,13 @@ const InvestorDashboard = () => {
                 <InvestorCardInInvestor
                   key={val._id}
                   name={val.name}
-                  fundsRecived={val.fundsRecieved ? val.fundsRecieved : 0}
-                  fundsRequired={val.fundsRequired}
+                  fundsReceived={val.fundsRecieved ? val.fundsRecieved : 0}
+                  fundsReq={val.fundsRequired ? val.fundsRequired : 0}
                   username={val.username}
                   stocks={val.stocks}
                   _id={val._id}
+                  logo = {val.logo}
+                  founded={val.founded}
                 />
               ))}
         </div>

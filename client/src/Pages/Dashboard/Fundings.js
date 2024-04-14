@@ -38,13 +38,31 @@ const Fundings = ({startup}) => {
     <>
       <div className="p-4 pt-20 min-h-screen lg:ml-64">
         <div className="w-full flex flex-col">
-          <h1 className="text-3xl mb-1 text-left font-bold leading-none md:text-4xl lg:text-5xl pb-2 bg-gradient-to-bl from-green-700 via-emerald-500 to-lime-600 bg-clip-text text-transparent">
+          <h1 className="text-3xl mb-1 text-left font-bold leading-none md:text-4xl lg:text-5xl pb-2 bg-gradient-to-bl from-orange-400  to-red-400 bg-clip-text text-transparent">
             {" "}
-            See who funded in your startup{" "}
+            {
+              startup ===  true ? 
+              <>
+              See who funded in your startup{" "}
+              </> : 
+              <>
+              See the startups you funded{" "}
+              
+              </>
+            }
+
           </h1>
           <p className="mb-3 text-lg font-normal text-gray-500 lg:text-xl text-left">
             {" "}
+            {
+              startup === true ? 
+              <>
             Find out who funded in your startup and how much they funded{" "}
+              </> : 
+              <>
+            Find out the statups that you funded till now and how much you funded{" "}
+              </>
+            }
           </p>
           <hr className="h-px my-5 mt-1 bg-gray-700 border-0" />
 

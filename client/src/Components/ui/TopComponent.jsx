@@ -78,7 +78,7 @@ const TopComponent = ({
             Need Rs. {fundingReq}
           </h2>
           <img
-            src="/ogog.webp"
+            src="/images/openai.png"
             alt=""
             className="w-12 h-12 backdrop-blur-3xl rounded-full"
           />

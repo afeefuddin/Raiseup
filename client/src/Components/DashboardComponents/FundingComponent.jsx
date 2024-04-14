@@ -15,7 +15,7 @@ const FundingComponent = ({
       <p className="text-gray-600">{email}</p>
       <div className="flex gap-10 justify-between items-center">
         <p className="text-gray-600">Investor</p>
-        <p className="text-green-800 font-bold text-lg">₹ {amount}</p>
+        <p className="text-amber-800 font-bold text-lg">₹ {amount}</p>
       </div>
     </div>
   );

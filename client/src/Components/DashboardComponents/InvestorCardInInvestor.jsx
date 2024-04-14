@@ -151,6 +151,7 @@ const InvestorCardInInvestor = ({
                             />{" "}
                           </g>
                         </svg>
+                        {founded?.split("T")[0]}
                       </span>
                      {domain}
                     </div>

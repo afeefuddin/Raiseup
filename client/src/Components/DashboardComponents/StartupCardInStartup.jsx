@@ -72,14 +72,14 @@ const StartupCardInStartup = ({
             Updated till {getCurrentDateTime()}
           </p>
           <p className="text-3xl font-bold tracking-wide md:text-4xl line-clamp-2 flex-1 bg-gradient-to-br from-slate-950 to-green-800 transition-all bg-clip-text text-transparent hover:bg-gradient-to-tl">
-            Urekathon
+            Open AI
           </p>
           <p className="text-gray-900 line-clamp-4 h-24">
-            Urekathon is alalalallUrekathon is alalalallUrekathon is
-            alalalallUrekathon is alalalallUrekathon is alalalallUrekathon is
-            alalalallUrekathon is alalalallUrekathon is alalalallUrekathon is
-            alalalallUrekathon is alalalallUrekathon is alalalallUrekathon is
-            alalalallUrekathon is alalalallUrekathon is alalalallUrekathon is
+            Hack ur way is alalalallHack ur way is alalalallHack ur way is
+            alalalallHack ur way is alalalallHack ur way is alalalallHack ur way is
+            alalalallHack ur way is alalalallHack ur way is alalalallHack ur way is
+            alalalallHack ur way is alalalallHack ur way is alalalallHack ur way is
+            alalalallHack ur way is alalalallHack ur way is alalalallHack ur way is
             alalalall
           </p>
         </div>

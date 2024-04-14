@@ -30,7 +30,7 @@ function TopStartups({page}) {
                 domain="Farming"
                 title="InnovizeHub"
                 description="InnovizeHub is a startup that is working on the development of a new technology that will help farmers to increase their productivity. The startup has raised $90,000 in funding and is looking for more investors to help them grow."
-                userPhoto={"/ogog.webp"}
+                userPhoto={"/images/ogog.png"}
                 userName={"John Doe"}
                 action="donate"
               />
@@ -42,7 +42,7 @@ function TopStartups({page}) {
                 domain="Farming"
                 title="InnovizeHub"
                 description="InnovizeHub is a startup that is working on the development of a new technology that will help farmers to increase their productivity. The startup has raised $90,000 in funding and is looking for more investors to help them grow."
-                userPhoto={"/ogog.webp"}
+                userPhoto={"/images/ogog.png"}
                 userName={"John Doe"}
                 action="donate"
               />
@@ -54,7 +54,7 @@ function TopStartups({page}) {
                 domain="Farming"
                 title="InnovizeHub"
                 description="InnovizeHub is a startup that is working on the development of a new technology that will help farmers to increase their productivity. The startup has raised $90,000 in funding and is looking for more investors to help them grow."
-                userPhoto={"/ogog.webp"}
+                userPhoto={"/images/ogog.png"}
                 userName={"John Doe"}
                 action="donate"
               />

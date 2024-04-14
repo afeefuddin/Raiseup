@@ -71,7 +71,7 @@ const Sidebar = ({ role, startupState }) => {
               </button>
               <Link to="/dashboard" className="flex pl-4 items-center">
                 <img
-                  src="/raise-up-logo.png"
+                  src="images/raise-up-logo.png"
                   className="mr-0 h-9"
                   alt="Raiseup Logo"
                 />
