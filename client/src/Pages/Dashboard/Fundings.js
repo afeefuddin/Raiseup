@@ -3,10 +3,9 @@ import { useAuth } from "../../Context/AuthContext";
 import axios from "axios";
 import FundingComponent from "../../Components/DashboardComponents/FundingComponent";
 
-const Fundings = () => {
+const Fundings = ({startup}) => {
   const { currentUser } = useAuth();
   const [fundings, setFundings] = useState(null);
-
   useEffect(() => {
     const nodeEnv = process.env.REACT_APP_NODE_ENV;
     console.log(nodeEnv);
@@ -23,6 +22,7 @@ const Fundings = () => {
           }
         );
         console.log(response.data?.data);
+        console.log(currentUser)
         setFundings(response.data?.data);
         console.log(fundings);
       } catch (error) {
@@ -52,10 +52,10 @@ const Fundings = () => {
             {fundings ? (
               fundings.map((funding) => (
                 <FundingComponent key={funding.paymentData._id}
-                  name={funding.userData.name}
-                  email={funding.userData.email}
+                  name={startup === true ? funding.userData.name : funding.startupData.name}
+                  email={startup === true ? funding.userData.email : funding.startupData.slogan}
                   amount={funding.paymentData.amount}
-                  photo={funding.userData.photoUrl}
+                  photo={startup===true ? funding.userData.photoUrl : funding.startupData.logo}
                 />
               ))
             ) : (

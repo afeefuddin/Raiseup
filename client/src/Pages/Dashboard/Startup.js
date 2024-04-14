@@ -35,7 +35,7 @@ function Startup() {
         <div className=" h-full w-full flex justify-center p-4">
           <div className=" max-w-7xl w-full">
             <div className=" flex justify-center ">
-              <div className=" flex flex-col-reverse+ lg:grid lg:grid-cols-3 w-full">
+              <div className=" flex flex-col-reverse lg:grid lg:grid-cols-3 w-full">
                 <div className=" col-span-2 flex flex-col gap-4">
                   <div className="flex flex-row gap-8 items-center ">
                     <div>
