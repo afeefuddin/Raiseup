@@ -1,10 +1,9 @@
-const { User } = require("../models/User");
+const { User } = require("../model/User");
 
 async function createUser(req, res) {
-  console.log(req.body)
-  const { useruid, email, name, role, photoUrl } = req.body;
+  const { useruid, email, name, role } = req.body;
   try {
-    const user = new User({ useruid, email, name, role, photoUrl});
+    const user = new User({ useruid, email, name, role });
     await user.save();
     res.send(user);
   } catch (error) {

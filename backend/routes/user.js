@@ -1,11 +1,17 @@
-const {Router} = require('express');
-const createUser = require('../controllers/createUser');
+const express = require("express");
+const createUser = require("../controllers/createUser");
 const getUser = require("../controllers/getUser");
+const rechargeWallet = require("../controllers/rechargeWallet");
 
-const router = Router()
+const payment = require("../controllers/payment");
 
+const router = express.Router();
 
 router.post("/adduser", createUser);
 router.get("/getuser/:useruid", getUser);
+router.post("/recharge", rechargeWallet);
 
-module.exports = {router}
+router.post("/payment", payment);
+
+
+module.exports = router;

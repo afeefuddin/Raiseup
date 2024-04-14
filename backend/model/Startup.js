@@ -2,7 +2,8 @@ const mongoose = require("mongoose");
 const { Schema } = mongoose;
 
 const startupSchema = new Schema({
-  useruid: { type: String, required: true, unique: true },
+
+  useruid: { type: String, required: true, unique: true},
 
   name: { type: String, required: true },
   description: { type: String, required: true },

@@ -19,7 +19,7 @@ const Form = ({ setStartupState }) => {
     const nodeEnv = process.env.REACT_APP_NODE_ENV;
     const baseUrl =
       nodeEnv === "production"
-        ? "https://crowdup-api.vercel.app"
+        ? "https://raiseup-api.vercel.app"
         : "http://localhost:5000";
 
     const name = e.target[0].value;

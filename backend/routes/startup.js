@@ -10,7 +10,7 @@ router.post("/create", uploadFiles, createStartup);
 
 router.get("/isactive/:useruid", isActiveStartup);
 
-router.get("/explore", getStartupList);
-router.get("startup/:id", getStartup);
+router.get("/explore",getStartupList)
+router.get('startup/:id',getStartup)
 
 module.exports = router;
