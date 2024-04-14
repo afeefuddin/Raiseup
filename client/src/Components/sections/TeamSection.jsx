@@ -4,7 +4,7 @@ const TeamsSection = () => {
   return (
     <section
       id="team"
-      className="overflow-hidden pt-28 md:pt-32 px-4 sm:px-10 xl:pt-36 bg-gradient-to-b from-emerald-300 via-white to-white"
+      className="overflow-hidden pt-28 md:pt-32 px-4 sm:px-10 xl:pt-36 bg-gradient-to-b from-amber-200 via-white to-white"
     >
       <div className="container mx-auto">
         <div className="-mx-4 flex flex-wrap">

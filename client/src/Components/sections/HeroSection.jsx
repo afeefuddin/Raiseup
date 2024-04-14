@@ -25,8 +25,10 @@ const HeroSection = ({ page }) => {
                   Raise Up is a platform that allows you to get crowd funding for your business or project. You can also invest in other projects and earn a share of the capital.
                 </p>
                 <div className='flex justify-center lg:justify-start gap-6 flex-wrap'>
-                  <button className='bg-gradient-to-br from-orange-400 shadow-2xl shadow-red-400  rounded-xl text-white font-semibold text-base tracking-wide to-red-400 py-2 px-4 hover:bg-gradient-to-tl hover:scale-105 transition-all ease-in-out duration-200 flex justify-center items-center'>
+                  <button className='bg-gradient-to-br from-orange-400 shadow-2xl shadow-red-400  rounded-xl text-white font-semibold text-base tracking-wide to-red-400 py-2 px-4 hover:bg-gradient-to-tl hover:scale-105 transition-all ease-in-out duration-200 flex justify-center items-center' >
+                    <a href="#features">
                     Know More <FontAwesomeIcon icon={faArrowRight} className='ml-2 pt-1' />
+                    </a>
                   </button>
                   <Link to={page} className='bg-gradient-to-tl from-orange-400 shadow-2xl shadow-red-600  rounded-xl text-white font-semibold text-base tracking-wide to-red-400 py-2 px-4 hover:bg-gradient-to-br hover:scale-105 transition-all ease-in-out duration-200'>Get Started</Link>
                 </div>
@@ -40,12 +42,12 @@ const HeroSection = ({ page }) => {
                   </div>
                   <div className="composition-4-image-1">
                     <div className="composition-4-image-1-inner">
-                      <img src="/images/hs-image-3.webp" alt="" />
+                      <img src="/images/crowd-fund-1.webp" alt="" />
                     </div>
                   </div>
                   <div className="composition-4-image-2">
                     <div className="composition-4-image-2-inner">
-                      <img src="/images/hs-image-2.webp" alt="" />
+                      <img src="/images/crowd-fund-2.jpg" alt="" />
                     </div>
                   </div>
                 </div>

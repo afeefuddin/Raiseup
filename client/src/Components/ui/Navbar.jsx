@@ -59,7 +59,7 @@ const Navbar = ({ activeLink, handleActiveLink, handleMenuToggle, isMenuOpen, pa
           </div>
           {isMenuOpen && (
             <div
-              className="justify-between lg:hidden items-center w-full mt-2 pb-4 px-2.5 rounded-lg border-b-2 bg-gradient-to-b from-amber-300 to-orange-400"
+              className="justify-between lg:hidden items-center w-full mt-2 pb-4 px-2.5 rounded-lg border-b-2 bg-gradient-to-b from-amber-200 to-orange-300"
               id="mobile-menu-2"
             >
               <ul className="flex flex-col mt-4 font-medium space-y-3">

@@ -1,28 +1,32 @@
-import logo from "./logo.svg";
+import React from "react";
+import { AuthProvider } from "./Context/AuthContext";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import "./App.css";
 import Home from "./Pages/Home";
 import Login from "./Pages/Login";
-import { AuthProvider } from "./Context/AuthContext";
 import Signup from "./Pages/Signup";
+import Dashboard from "./Pages/Dashboard/Dashboard";
 import Role from "./Pages/Role";
-
+import NotFound from "./Pages/NotFound";
+import PaymentCard from "./Components/Payment/PaymentCard";
 
 function App() {
   return (
-    <div className="App">
-      <AuthProvider>
-
-      <Router>
-        <Routes>
-
-        <Route exact path="/" element={<Home />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/signup" element={<Signup />} />
-        <Route path="/role" element={<Role />} />
-        </Routes>
-      </Router>
-      </AuthProvider>
+    <div className="min-h-screen flex justify-center">
+      <div className="w-full">
+        <AuthProvider>
+          <Router>
+            <Routes>
+              <Route exact path="/" element={<Home />} />
+              <Route path="/login" element={<Login />} />
+              <Route path="/signup" element={<Signup />} />
+              <Route path="/role" element={<Role />} />
+              <Route path="/dashboard/*" element={<Dashboard />} />
+              <Route path="/he" element={<PaymentCard />} />
+              <Route path="/*" element={<NotFound />} />
+            </Routes>
+          </Router>
+        </AuthProvider>
+      </div>
     </div>
   );
 }
