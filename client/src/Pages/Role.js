@@ -29,7 +29,7 @@ const Role = () => {
     console.log(nodeEnv);
     const baseUrl =
       nodeEnv === "production"
-        ? "https://raiseup-api.vercel.app/"
+        ? "https://raiseup-api.vercel.app"
         : "http://localhost:5000";
     const getUser = async () => {
       try {
@@ -62,7 +62,7 @@ const Role = () => {
     console.log(nodeEnv);
     const baseUrl =
       nodeEnv === "production"
-        ? "https://raiseup-api.vercel.app/"
+        ? "https://raiseup-api.vercel.app"
         : "http://localhost:5000";
     try {
       const response = await axios.post(
