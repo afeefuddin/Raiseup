@@ -71,12 +71,12 @@ const Sidebar = ({ role, startupState }) => {
               </button>
               <Link to="/dashboard" className="flex pl-4 items-center">
                 <img
-                  src="/crowd-up.webp"
+                  src="/raise-up-logo.png"
                   className="mr-0 h-9"
-                  alt="Flowbite Logo"
+                  alt="Raiseup Logo"
                 />
                 <span className="self-center ml-1 text-xl font-bold tracking-wide whitespace-nowrap text-white">
-                  Crowd Up
+                  Raise Up
                 </span>
               </Link>
             </div>
