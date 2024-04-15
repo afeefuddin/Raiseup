@@ -30,15 +30,15 @@ async function sendMail({ otp, amount, startupid, email }) {
       <p>Please use the OTP provided above to complete your verification process. If you did not request this OTP, please ignore this email.</p>
     
       <p>Thank you,<br>
-      RaiseUp Team</p>
+        RaiseUp Team</p>
     </div>
     
     </div>
 `;
     const info = await transporter.sendMail({
-      from: `"RaiseUp" <${process.env.EMAIL_ID}>`, // sender address
+      from: `"Raiseup" <${process.env.EMAIL_ID}>`, // sender address
       to: email.trim(), // list of receivers
-      subject: "OTP for RaiseUp Payment Verification", // Subject line
+      subject: "OTP for Raiseup Payment Verification", // Subject line
       //   text: "Rere woopds iif. ooop", // plain text body
       html: msgbody, // html body
     });

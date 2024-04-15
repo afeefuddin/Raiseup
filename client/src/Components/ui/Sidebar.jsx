@@ -71,7 +71,7 @@ const Sidebar = ({ role, startupState }) => {
               </button>
               <Link to="/dashboard" className="flex pl-4 items-center">
                 <img
-                  src="/raise-up-logo.png"
+                  src="images/raise-up-logo.png"
                   className="mr-0 h-9"
                   alt="Raiseup Logo"
                 />
@@ -295,7 +295,7 @@ function CustomLink({ to, children, ...props }) {
         {...props}
         className={
           isActive
-            ? "flex items-center p-2 bg-gradient-to-br from-green-400 to-emerald-600 border-2 border-green-400 text-slate-950 font-bold rounded-lg group"
+            ? "flex items-center p-2 bg-gradient-to-br from-orange-400 to-red-400 border-2 border-amber-400 text-slate-950 font-bold rounded-lg group"
             : "flex items-center p-2 rounded-lg text-white  hover:bg-gray-700 group"
         }
       >

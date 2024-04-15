@@ -8,7 +8,7 @@ const paymentRouter = require("./routes/payment");
 const app = express();
 const corsOrigin =
   process.env.REACT_APP_NODE_ENV === "production"
-    ? "https://raise-up.vercel.app"
+    ? "https://raiseup.vercel.app"
     : "http://localhost:3000";
 
 app.use(

@@ -12,7 +12,7 @@ const StartupDashboard = ({ currentUser, startupState }) => {
           <center>
             <Link
               to="/dashboard/publicise"
-              className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 bg-gradient-to-br from-green-600 shadow-2xl mt-2 shadow-green-900 border-2 border-green-400 rounded-xl text-base tracking-wide to-emerald-700 hover:bg-gradient-to-tl hover:scale-105 transition-all ease-in-out duration-200 flex justify-center items-center w-72"
+              className="bg-gradient-to-br from-orange-400 shadow-2xl shadow-red-400  rounded-xl text-white font-semibold text-base tracking-wide to-red-400 py-2 px-4 hover:bg-gradient-to-tl hover:scale-105 transition-all ease-in-out duration-200 flex justify-center items-center w-72"
             >
               Publicise your startup
             </Link>

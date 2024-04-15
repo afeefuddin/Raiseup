@@ -119,12 +119,12 @@ const Dashboard = () => {
         {
           // If the user is a startup and the startup is active
           role === "startup" && startupState === "active" && (
-            <Route path="/fundings" element={<Fundings />} />
+            <Route path="/fundings" element={<Fundings startup={true} />} />
           )
         }
         {
           // If the user is a startup and the startup is active
-          role === "investor" && <Route path="/funded" element={<Fundings />} />
+          role === "investor" && <Route path="/funded" element={<Fundings startup={false} />} />
         }
 
         {role === "investor" && (

@@ -1,11 +1,11 @@
 import React from "react";
-import TopComponent from "../ui/TopComponents";
+import TopComponent from "../ui/TopComponent";
 
 function TopStartups({page}) {
     return (
         <section
           id="recents"
-          className="overflow-hidden min-h-screen pt-28 md:pt-32 xl:pt-36 bg-gradient-to-b from-amber-400/70 via-white to-orange-300"
+          className="overflow-hidden min-h-screen pt-28 md:pt-32 xl:pt-36 bg-gradient-to-b from-orange-300 via-white to-amber-200"
         >
           <div className="max-w-[1222px] mx-auto px-4 sm:px-8 xl:px-0">
             <div className="text-center">
@@ -30,7 +30,7 @@ function TopStartups({page}) {
                 domain="Farming"
                 title="InnovizeHub"
                 description="InnovizeHub is a startup that is working on the development of a new technology that will help farmers to increase their productivity. The startup has raised $90,000 in funding and is looking for more investors to help them grow."
-                userPhoto={"/ogog.webp"}
+                userPhoto={"/images/ogog.png"}
                 userName={"John Doe"}
                 action="donate"
               />
@@ -42,7 +42,7 @@ function TopStartups({page}) {
                 domain="Farming"
                 title="InnovizeHub"
                 description="InnovizeHub is a startup that is working on the development of a new technology that will help farmers to increase their productivity. The startup has raised $90,000 in funding and is looking for more investors to help them grow."
-                userPhoto={"/ogog.webp"}
+                userPhoto={"/images/ogog.png"}
                 userName={"John Doe"}
                 action="donate"
               />
@@ -54,7 +54,7 @@ function TopStartups({page}) {
                 domain="Farming"
                 title="InnovizeHub"
                 description="InnovizeHub is a startup that is working on the development of a new technology that will help farmers to increase their productivity. The startup has raised $90,000 in funding and is looking for more investors to help them grow."
-                userPhoto={"/ogog.webp"}
+                userPhoto={"/images/ogog.png"}
                 userName={"John Doe"}
                 action="donate"
               />

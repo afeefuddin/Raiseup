@@ -29,7 +29,7 @@ const Role = () => {
     console.log(nodeEnv);
     const baseUrl =
       nodeEnv === "production"
-        ? "https://raiseup-api.vercel.app/"
+        ? "https://raiseup-api.vercel.app"
         : "http://localhost:5000";
     const getUser = async () => {
       try {
@@ -62,7 +62,7 @@ const Role = () => {
     console.log(nodeEnv);
     const baseUrl =
       nodeEnv === "production"
-        ? "https://raiseup-api.vercel.app/"
+        ? "https://raiseup-api.vercel.app"
         : "http://localhost:5000";
     try {
       const response = await axios.post(
@@ -104,7 +104,7 @@ const Role = () => {
             className="rounded-xl p-4 gap-y-4 border-4 font-semibold shadow-sm hover:scale-95 bg-white hover:bg-green-100 hover:border-emerald-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-emerald-600 transition-all duration-300 ease-in-out"
           >
             <img src="/images/startup.webp" loading='lazy' className='w-52 md:w-80' alt="" />
-            <span className="text-2xl text-green-700 font-semibold pt-8">Start Up</span>
+            <span className="text-2xl text-amber-500 font-semibold pt-8">Start Up</span>
           </button>
           <button
             onClick={() => createUser({ role: "investor" })}
